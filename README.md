@@ -7,7 +7,22 @@ Currently compiles *every* .less file in your project into a distinct output .cc
 
 Automatically appends inline sourcemaps to the end of files.
 
-Todo:
+## Usage
+In your `.eleventy.js` [config file](https://www.11ty.dev/docs/config/):
+
+```js
+const pluginLess = require("eleventy-plugin-less");
+
+module.exports = function (eleventyConfig) {
+	eleventyConfig.addPlugin(pluginLess);
+    // ...
+};
+
+```
+
+There are currently no configuration options.
+
+## Todo
 * Tests
 * Add a way to specify entrypoint files and ignore all others
 * Add a way to control sourcemaps
