@@ -1,21 +1,6 @@
 const less = require("less");
 const path = require("node:path");
 
-less.logger.addListener({
-    debug: function(msg) {
-        console.debug(msg)
-    },
-    info: function(msg) {
-        console.info(msg)
-    },
-    warn: function(msg) {
-        console.warn(msg)
-    },
-    error: function(msg) {
-        console.error(msg)
-    }
-});
-
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addTemplateFormats("less");
 
@@ -43,6 +28,7 @@ module.exports = function (eleventyConfig) {
             this.addDependencies(inputPath, result.imports);
 
 			// This is the render function, `data` is the full data cascade
+            // eslint-disable-next-line no-unused-vars
 			return async (data) => {
 				return result.css;
 			};

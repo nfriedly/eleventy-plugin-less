@@ -4,7 +4,9 @@
   "description": "Plugin for eleventy (11ty) that converts Less stylesheets to CSS",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "lint": "eslint .",
+    "autofix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,10 @@
   "homepage": "https://github.com/nfriedly/eleventy-plugin-less#readme",
   "dependencies": {
     "less": "^4.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "eslint": "^9.4.0",
+    "globals": "^15.4.0"
   }
 }
