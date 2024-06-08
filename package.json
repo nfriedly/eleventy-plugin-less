@@ -1,0 +1,32 @@
+{
+  "name": "eleventy-plugin-less",
+  "version": "0.0.0",
+  "description": "Plugin for eleventy (11ty) that converts Less stylesheets to CSS",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfriedly/eleventy-plugin-less.git"
+  },
+  "keywords": [
+    "eleventy-plugin",
+    "eleventy",
+    "11ty",
+    "less",
+    "css",
+    "style",
+    "stylesheet",
+    "stylesheets"
+  ],
+  "author": "Nathan Friedly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nfriedly/eleventy-plugin-less/issues"
+  },
+  "homepage": "https://github.com/nfriedly/eleventy-plugin-less#readme",
+  "dependencies": {
+    "less": "^4.2.0"
+  }
+}
