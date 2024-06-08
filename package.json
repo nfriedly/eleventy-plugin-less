@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-less",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Plugin for eleventy (11ty) that converts Less stylesheets to CSS",
   "main": ".eleventy.js",
   "scripts": {
