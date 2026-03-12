@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addExtension("less", {
 		outputFileExtension: "css",
+		compileOptions: {permalink: "raw"},
 
 		// `compile` is called once per .less file in the input directory
 		compile: async function (inputContent, inputPath) {
